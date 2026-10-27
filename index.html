@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8f5ef">
+<title>Tchiky Élégance — Sacs, chaussures, montres et parfums en Algérie</title>
+<style>
+:root{--paper:#faf8f3;--cream:#f3eee5;--ink:#27231f;--muted:#777067;--line:#e6dfd4;--gold:#9b7547;--white:#fff;--danger:#a13b32}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}
+.announcement{height:35px;background:#2c2925;color:#f8f5ef;display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.09em}
+header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,24px);background:rgba(250,248,243,.96)}
+.logo{font-family:Georgia,'Times New Roman',serif;font-size:21px;letter-spacing:.13em;white-space:nowrap}nav{display:flex;gap:35px;align-items:center;font-size:12px;letter-spacing:.06em}nav a:hover{color:var(--gold)}.menu-toggle{display:none;border:0;background:none;font-size:22px}
+.hero{display:grid;grid-template-columns:.9fr 1.1fr;min-height:490px;background:#f2ece1;overflow:hidden}.hero-copy{padding:82px 8vw 70px 10vw;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#8a755d;margin:0 0 22px}
+h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(42px,4.8vw,66px);line-height:1.08;letter-spacing:-.035em;margin:0 0 22px;max-width:520px}.hero-copy p:not(.eyebrow){font-size:14px;line-height:1.9;color:#6e665c;max-width:390px;margin:0 0 29px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#292621;color:white;padding:15px 23px;font-size:11px;letter-spacing:.08em;transition:background .2s,transform .2s;border:1px solid #292621}.btn:hover{background:#594632;transform:translateY(-1px)}
+.hero-image{min-height:490px;position:relative}.hero-image img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.collection{padding:76px max(5vw,24px) 35px;max-width:1440px;margin:auto}.section-head{text-align:center;margin-bottom:34px}.section-head .eyebrow{margin-bottom:12px}h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,3.2vw,42px);font-weight:400;letter-spacing:-.025em;margin:0 0 13px}.section-head p{font-size:13px;color:var(--muted);margin:0}
+.filters{display:flex;justify-content:center;gap:8px;margin:30px 0 22px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;padding:10px 18px;font-size:11px;color:#655e55}.filter.active,.filter:hover{background:#2c2925;color:white;border-color:#2c2925}.result-row{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#777067;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 20px}.product{min-width:0}.product-image{position:relative;aspect-ratio:4/4.8;background:#f0e9dd;overflow:hidden}.product-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .5s}.product:hover .product-image img{transform:scale(1.035)}.badge{position:absolute;top:12px;left:12px;background:rgba(250,248,243,.94);padding:7px 9px;font-size:9px;letter-spacing:.04em;color:#4e453a}.product-info{padding:15px 1px 0}.product-name{font-family:Georgia,'Times New Roman',serif;font-size:17px;font-weight:400;margin:0 0 8px}.price{font-size:12px;letter-spacing:.04em;font-weight:600;margin-bottom:8px}.ref{font-size:10px;color:#898176;letter-spacing:.06em;margin-bottom:13px}.order{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 10px;background:transparent;border:1px solid #d8cfc2;font-size:10px;letter-spacing:.04em;transition:all .2s}.order:hover{background:#2c2925;color:white;border-color:#2c2925}
+.pagination{display:flex;justify-content:center;gap:8px;margin:38px 0 27px}.page-btn{width:36px;height:36px;border:1px solid var(--line);background:transparent;font-size:11px}.page-btn.active,.page-btn:hover{background:#2c2925;color:white;border-color:#2c2925}.page-label{text-align:center;color:#898176;font-size:11px;margin-bottom:25px}.disclaimer{text-align:center;font-size:10px;color:#8c857a;line-height:1.7;max-width:700px;margin:0 auto;padding:0 20px 65px}
+footer{background:#2b2824;color:#eee8df;padding:53px max(6vw,24px) 25px}.footer-main{max-width:1250px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px}.footer-logo{font-family:Georgia,'Times New Roman',serif;font-size:19px;letter-spacing:.12em;margin-bottom:17px}.footer-about{font-size:12px;line-height:1.9;color:#c2b9ad;max-width:280px}.footer-title{font-size:10px;text-transform:uppercase;letter-spacing:.16em;margin:4px 0 18px;color:#d4c8b8}.footer-links{display:flex;flex-direction:column;gap:12px;font-size:11px;color:#c2b9ad}.footer-links a:hover{color:white}.map-placeholder{height:74px;border:1px solid #514940;display:flex;align-items:center;justify-content:center;font-size:10px;color:#aaa095;margin-top:12px}.socials{display:flex;gap:13px;font-size:12px}.footer-bottom{max-width:1250px;margin:auto;border-top:1px solid #49423a;padding-top:20px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:10px;color:#aaa095}.legal{display:flex;gap:18px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:rgba(25,22,19,.62);z-index:20;display:none;align-items:center;justify-content:center;padding:18px;overflow-y:auto}.modal.open{display:flex}.modal-card{background:var(--paper);width:min(620px,100%);max-height:94vh;overflow-y:auto;padding:28px;border:1px solid var(--line);position:relative}.modal-card.wide{width:min(900px,100%)}.modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:22px}.modal-head h2{font-size:30px;margin:0}.close{border:0;background:transparent;font-size:25px;line-height:1;padding:0 3px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#665e54;letter-spacing:.03em}.field input,.field select,.field textarea{width:100%;border:1px solid #dcd3c7;background:white;padding:12px;font-size:13px;color:var(--ink);border-radius:0}.field textarea{min-height:85px;resize:vertical}.form-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}.form-actions .btn{border:1px solid #292621}.btn.secondary{background:transparent;color:var(--ink);border-color:var(--line)}.notice{font-size:12px;line-height:1.6;color:var(--muted);margin:12px 0 0}.status{font-size:12px;line-height:1.5;margin-top:14px}.status.error{color:var(--danger)}.status.success{color:#286744}.admin-tabs{display:flex;gap:8px;margin:0 0 18px;flex-wrap:wrap}.admin-tabs button{padding:9px 12px;border:1px solid var(--line);background:transparent;font-size:11px}.admin-tabs button.active{background:#292621;color:white}.admin-list{display:grid;gap:10px}.admin-item{display:grid;grid-template-columns:60px 1fr auto;gap:12px;align-items:center;padding:10px;border:1px solid var(--line)}.admin-item img{width:60px;height:60px;object-fit:cover;background:var(--cream)}.admin-item strong{display:block;font-size:13px;font-weight:500}.admin-item small{display:block;color:var(--muted);font-size:11px;margin-top:5px}.admin-item-actions{display:flex;gap:6px}.admin-item-actions button{font-size:11px;padding:8px;border:1px solid var(--line);background:transparent}.admin-item-actions .delete{color:var(--danger)}.admin-warning{padding:12px;background:#f2ece1;font-size:11px;line-height:1.6;margin:0 0 18px}.hidden{display:none!important}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-copy{padding-left:7vw;padding-right:5vw}.footer-main{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.announcement{height:31px;font-size:9px}header{height:67px;padding:0 20px}.logo{font-size:17px}nav{display:none;position:absolute;top:98px;left:0;right:0;background:var(--paper);padding:20px;z-index:5;border-bottom:1px solid var(--line);flex-direction:column;gap:22px}.menu-toggle{display:block}nav.open{display:flex}.hero{grid-template-columns:1fr}.hero-copy{padding:58px 25px 45px;order:1}.hero-image{min-height:280px;order:0}.hero-image img{position:absolute}h1{font-size:45px}.hero-copy p:not(.eyebrow){font-size:13px}.collection{padding:58px 17px 25px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 12px}.product-name{font-size:15px}.product-info{padding-top:11px}.product-image{aspect-ratio:4/4.9}.badge{top:8px;left:8px;padding:6px 7px;font-size:8px}.order{font-size:9px;padding:11px 5px}.filters{margin:25px 0 20px}.filter{padding:9px 13px}.footer-main{grid-template-columns:1fr 1fr;gap:32px 20px}.footer-main>div:first-child{grid-column:1/-1}footer{padding:42px 22px 22px}.footer-bottom{line-height:1.8}.modal-card{padding:21px 17px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.modal-head h2{font-size:26px}.admin-item{grid-template-columns:48px 1fr}.admin-item img{width:48px;height:48px}.admin-item-actions{grid-column:2}.admin-item-actions button{padding:7px}}
+</style>
+</head>
+<body>
+<div class="announcement">Livraison disponible partout en Algérie</div>
+<header>
+  <a class="logo" href="#accueil">TCHIKY ÉLÉGANCE</a>
+  <button class="menu-toggle" aria-label="Ouvrir le menu" id="menuToggle">☰</button>
+  <nav id="nav"><a href="#accueil">Accueil</a><a href="#collection" data-filter="sacs">Sacs</a><a href="#collection" data-filter="chaussures">Chaussures</a><a href="#collection" data-filter="montres">Montres</a><a href="#collection" data-filter="parfums">Parfums</a></nav>
+</header>
+<main>
+<section class="hero" id="accueil">
+  <div class="hero-copy"><p class="eyebrow">La sélection féminine</p><h1>L'élégance dans chaque détail.</h1><p>Découvrez notre sélection de sacs et de chaussures pour sublimer votre style au quotidien.</p><a class="btn" href="#collection">Découvrir la collection</a></div>
+  <div class="hero-image"><img src="https://tchiky-elegance-showcase.lovable.app/assets/hero-DhbMjBO5.jpg" alt="Sélection de sacs et chaussures pour femme"></div>
+</section>
+<section class="collection" id="collection">
+  <div class="section-head"><p class="eyebrow">La boutique</p><h2>Nos pièces incontournables</h2><p>Des accessoires choisis pour accompagner votre style.</p></div>
+  <div class="filters" role="group" aria-label="Filtrer les produits"><button class="filter active" data-filter="tout">Tout</button><button class="filter" data-filter="sacs">Sacs</button><button class="filter" data-filter="chaussures">Chaussures</button><button class="filter" data-filter="montres">Montres</button><button class="filter" data-filter="parfums">Parfums</button></div>
+  <div class="result-row"><span id="count">Chargement des produits…</span><span id="catalogState"></span></div>
+  <div class="grid" id="productGrid"></div><div class="pagination" id="pagination"></div><div class="page-label" id="pageLabel"></div>
+</section>
+<p class="disclaimer">La disponibilité, les prix et les détails de livraison seront confirmés après réception de votre commande.</p>
+</main>
+<footer><div class="footer-main">
+  <div><div class="footer-logo">TCHIKY ÉLÉGANCE</div><div class="footer-about">Des sacs, des chaussures, des montres et des parfums pour révéler votre élégance au quotidien.</div></div>
+  <div><div class="footer-title">Navigation</div><div class="footer-links"><a href="#accueil">Accueil</a><a href="#collection" data-filter="sacs">Nos sacs</a><a href="#collection" data-filter="chaussures">Nos chaussures</a><a href="#collection" data-filter="montres">Nos montres</a><a href="#collection" data-filter="parfums">Nos parfums</a><a href="#" id="adminOpen">Administration</a></div></div>
+  <div><div class="footer-title">Contact</div><div class="footer-links"><a href="https://wa.me/213556340386" target="_blank" rel="noopener">Téléphone : +213 556 34 03 86</a><span>Adresse du magasin à renseigner</span><div class="map-placeholder">Carte bientôt disponible</div></div></div>
+  <div><div class="footer-title">Suivez-nous</div><div class="socials"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="TikTok">TikTok</a></div></div>
+</div><div class="footer-bottom"><span>© 2026 Tchiky Élégance. Tous droits réservés.</span><div class="legal"><a href="#">Politique de confidentialité</a><a href="#">Conditions générales de vente</a><a href="#">Mentions légales</a></div></div></footer>
+
+<!-- Order form -->
+<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+ <div class="modal-card"><div class="modal-head"><div><p class="eyebrow">Votre commande</p><h2 id="orderTitle">Vos coordonnées</h2></div><button class="close" data-close="orderModal" aria-label="Fermer">×</button></div>
+ <form id="orderForm">
+  <input type="hidden" name="access_key" value="12c51b9d-3dd8-4ae9-aa0c-9c80fc382a8a">
+  <input type="hidden" name="subject" value="Nouvelle commande — Tchiky Élégance">
+  <input type="hidden" name="from_name" value="Tchiky Élégance">
+  <input type="hidden" name="product_details" id="orderProductDetails">
+  <div class="form-grid">
+   <div class="field full"><label for="orderProduct">Produit</label><input id="orderProduct" name="Produit" required readonly></div>
+   <div class="field"><label for="orderQty">Quantité</label><input id="orderQty" name="Quantité" type="number" min="1" max="99" value="1" required></div>
+   <div class="field"><label for="customerName">Nom et prénom *</label><input id="customerName" name="Nom et prénom" autocomplete="name" required></div>
+   <div class="field"><label for="customerPhone">Numéro de téléphone *</label><input id="customerPhone" name="Téléphone" type="tel" autocomplete="tel" placeholder="05 / 06 / 07…" required></div>
+   <div class="field"><label for="customerWilaya">Wilaya *</label><select id="customerWilaya" name="Wilaya" required><option value="">Choisir une wilaya</option></select></div>
+   <div class="field"><label for="customerColor">Couleur *</label><input id="customerColor" name="Couleur" placeholder="Couleur souhaitée" required></div>
+   <div class="field hidden" id="sizeField"><label for="customerSize">Pointure *</label><input id="customerSize" name="Pointure" type="number" min="15" max="60" step="0.5" placeholder="Ex. 38"></div>
+   <div class="field full"><label for="deliveryMethod">Méthode de livraison *</label><select id="deliveryMethod" name="Méthode de livraison" required><option value="">Choisir une méthode</option><option value="Domicile">Livraison à domicile</option><option value="Point relais">Point relais</option></select></div>
+   <div class="field full" id="addressField"><label for="customerAddress">Adresse de livraison *</label><input id="customerAddress" name="Adresse de livraison" autocomplete="street-address" placeholder="Rue, quartier, repère…"></div>
+   <div class="field full hidden" id="relayField"><label for="customerRelay">Point relais souhaité *</label><input id="customerRelay" name="Point relais" placeholder="Nom ou adresse du point relais"></div>
+  </div>
+  <p class="notice">Vérifiez votre numéro, votre choix de couleur et les informations de livraison avant d’envoyer la commande. Nous vous contacterons pour confirmer les détails.</p>
+  <div class="form-actions"><button class="btn" id="submitOrder" type="submit">Envoyer la commande</button><button class="btn secondary" type="button" data-close="orderModal">Annuler</button></div><div class="status" id="orderStatus" role="status"></div>
+ </form></div>
+</div>
+
+<!-- Admin -->
+<div class="modal" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+ <div class="modal-card wide"><div class="modal-head"><div><p class="eyebrow">Espace privé</p><h2 id="adminTitle">Administration</h2></div><button class="close" data-close="adminModal" aria-label="Fermer">×</button></div>
+  <div id="adminLoginView">
+   <form id="adminLoginForm"><div class="form-grid"><div class="field"><label for="adminUsername">Nom d’utilisateur</label><input id="adminUsername" autocomplete="username" required></div><div class="field"><label for="adminPassword">Mot de passe</label><input id="adminPassword" type="password" autocomplete="current-password" required></div></div><div class="form-actions"><button class="btn" type="submit">Se connecter</button></div><div class="status error" id="loginStatus"></div></form>
+   <p class="notice">Les identifiants demandés (admin / admin) sont provisoires et ne sécurisent pas un site public. Voir les instructions d’installation avec Supabase avant la mise en ligne.</p>
+  </div>
+  <div id="adminDashboard" class="hidden">
+   <p class="admin-warning">Le catalogue est enregistré dans Supabase. Pour que l’ajout fonctionne, la table <code>products</code>, les permissions RLS et le bucket Storage public <code>product-images</code> doivent être configurés. Ne mettez jamais une clé service_role dans ce fichier. Le mot de passe de démonstration ne sécurise pas un site public.</p>
+   <div class="admin-tabs"><button class="active" data-admin-tab="products">Produits</button><button data-admin-tab="add">Ajouter un produit</button><button id="adminLogout">Déconnexion</button></div>
+   <div id="adminProductsView"><div class="admin-list" id="adminProductsList"></div></div>
+   <div id="adminAddView" class="hidden">
+    <form id="productForm"><input type="hidden" id="editProductId">
+     <div class="form-grid">
+      <div class="field"><label for="productName">Nom du produit *</label><input id="productName" required></div>
+      <div class="field"><label for="productPrice">Prix (DA) *</label><input id="productPrice" type="number" min="0" step="1" required></div>
+      <div class="field"><label for="productRef">Référence</label><input id="productRef" placeholder="Ex. SAC-011"></div>
+      <div class="field"><label for="productCategory">Catégorie *</label><select id="productCategory" required><option value="sacs">Sacs</option><option value="chaussures">Chaussures</option><option value="montres">Montres</option><option value="parfums">Parfums</option></select></div>
+      <div class="field"><label for="productBadge">Badge (facultatif)</label><input id="productBadge" placeholder="Nouveau, Best-seller…"></div>
+      <div class="field"><label for="productImage">Image du produit</label><input id="productImage" type="file" accept="image/*"></div>
+     </div>
+     <div class="form-actions"><button class="btn" type="submit" id="saveProductBtn">Enregistrer le produit</button><button class="btn secondary" type="button" id="cancelEdit">Annuler</button></div><div class="status" id="productStatus"></div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/*
+ SETUP:
+ 1) Supabase and Web3Forms credentials are filled in below.
+ 3) Supabase table products columns: id (uuid, default gen_random_uuid()), name (text),
+    price (numeric), ref (text), category (text), badge (text), image_url (text), created_at (timestamptz default now()).
+ 4) Create a PUBLIC Storage bucket named product-images.
+ IMPORTANT: The requested admin/admin login below is a FRONT-END DEMO gate, not secure authentication.
+ Anyone can inspect the source and bypass it. Before production, use Supabase Auth + RLS policies.
+*/
+const SUPABASE_URL = "https://zmtgbrbqbonblqqwnowq.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_CfBUaxActDvnWVXBKyD2ZA_zrXWPwga";
+const WEB3FORMS_ACCESS_KEY = "12c51b9d-3dd8-4ae9-aa0c-9c80fc382a8a";
+const supabaseConfigured = !SUPABASE_URL.startsWith("YOUR_") && !SUPABASE_ANON_KEY.startsWith("YOUR_");
+const web3Configured = !WEB3FORMS_ACCESS_KEY.startsWith("YOUR_");
+const db = supabaseConfigured && window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+const asset = name => `https://tchiky-elegance-showcase.lovable.app/assets/${name}`;
+const fallbackProducts = [
+{name:"Sac Élégance",price:6500,ref:"SAC-001",category:"sacs",badge:"Best-seller",image_url:asset("sac-01-CHo-ASkn.jpg")},
+{name:"Ballerines Perle",price:4200,ref:"CHS-001",category:"chaussures",badge:"Nouveau",image_url:asset("chaussure-01-ZJ6yZHVF.jpg")},
+{name:"Sac Épaule Nuit",price:5400,ref:"SAC-002",category:"sacs",image_url:asset("sac-02-DV1kws6A.jpg")},
+{name:"Mocassins Chocolat",price:5800,ref:"CHS-002",category:"chaussures",image_url:asset("chaussure-02-C4EjC3O1.jpg")},
+{name:"Bandoulière Camel",price:4900,ref:"SAC-003",category:"sacs",badge:"Coup de cœur",image_url:asset("sac-03-1G4TUi5b.jpg")},
+{name:"Slingbacks Noires",price:6200,ref:"CHS-003",category:"chaussures",badge:"Best-seller",image_url:asset("chaussure-03-GCdQlZRm.jpg")},
+{name:"Cabas Sable",price:7200,ref:"SAC-004",category:"sacs",image_url:asset("sac-04-DeIEbr8G.jpg")},
+{name:"Escarpins Nude",price:6900,ref:"CHS-004",category:"chaussures",image_url:asset("chaussure-04-Cj8Gm3y9.jpg")},
+{name:"Pochette Soirée Satin",price:3900,ref:"SAC-005",category:"sacs",badge:"Nouveau",image_url:asset("sac-05-BpiqJXvw.jpg")},
+{name:"Baskets Ivoire",price:5200,ref:"CHS-005",category:"chaussures",image_url:asset("chaussure-05-CpqzoDJl.jpg")},
+{name:"Sac Croco Moka",price:8200,ref:"SAC-006",category:"sacs",image_url:asset("sac-06-C78sPx5d.jpg")},
+{name:"Sandales Cognac",price:3800,ref:"CHS-006",category:"chaussures",badge:"Coup de cœur",image_url:asset("chaussure-06-BCMK6BhP.jpg")},
+{name:"Mini Sac Matelassé",price:6800,ref:"SAC-007",category:"sacs",badge:"Coup de cœur",image_url:asset("sac-07-DaMlhGtc.jpg")},
+{name:"Bottines Daim Noir",price:7900,ref:"CHS-007",category:"chaussures",image_url:asset("chaussure-07-Br33DkQ7.jpg")},
+{name:"Sac Seau Taupe",price:5900,ref:"SAC-008",category:"sacs",image_url:asset("sac-08-vCHqz9oV.jpg")},
+{name:"Slingbacks Bicolores",price:5600,ref:"CHS-008",category:"chaussures",badge:"Nouveau",image_url:asset("chaussure-08-S3zgvkB-.jpg")},
+{name:"Sac Élégance",price:6500,ref:"SAC-009",category:"sacs",image_url:asset("sac-01-CHo-ASkn.jpg")},
+{name:"Mocassins Chocolat",price:5800,ref:"CHS-009",category:"chaussures",image_url:asset("chaussure-02-C4EjC3O1.jpg")},
+{name:"Sac Épaule Nuit",price:5400,ref:"SAC-010",category:"sacs",image_url:asset("sac-02-DV1kws6A.jpg")},
+{name:"Ballerines Perle",price:4200,ref:"CHS-010",category:"chaussures",image_url:asset("chaussure-01-ZJ6yZHVF.jpg")}
+];
+let products = [...fallbackProducts], activeFilter="tout", page=1, selectedProduct=null, adminLoggedIn=false;
+const $=id=>document.getElementById(id);
+const money=n=>Number(n||0).toLocaleString("fr-FR").replace(/\u202f/g," ")+" DA";
+const escapeHtml=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const wilayas=["Adrar","Chlef","Laghouat","Oum El Bouaghi","Batna","Béjaïa","Biskra","Béchar","Blida","Bouira","Tamanrasset","Tébessa","Tlemcen","Tiaret","Tizi Ouzou","Alger","Djelfa","Jijel","Sétif","Saïda","Skikda","Sidi Bel Abbès","Annaba","Guelma","Constantine","Médéa","Mostaganem","M’Sila","Mascara","Ouargla","Oran","El Bayadh","Illizi","Bordj Bou Arréridj","Boumerdès","El Tarf","Tindouf","Tissemsilt","El Oued","Khenchela","Souk Ahras","Tipaza","Mila","Aïn Defla","Naâma","Aïn Témouchent","Ghardaïa","Relizane","Timimoun","Bordj Badji Mokhtar","Ouled Djellal","Béni Abbès","In Salah","In Guezzam","Touggourt","Djanet","El M’Ghair","El Meniaa"];
+wilayas.forEach((w,i)=>{const o=document.createElement("option");o.value=`${String(i+1).padStart(2,"0")} - ${w}`;o.textContent=o.value;$("customerWilaya").appendChild(o)});
+function updateSizeField(){
+ const isShoes=selectedProduct && selectedProduct.category==="chaussures";
+ $("sizeField").classList.toggle("hidden",!isShoes);
+ $("customerSize").required=!!isShoes;
+ if(!isShoes) $("customerSize").value="";
+}
+function updateDeliveryFields(){
+ const method=$("deliveryMethod").value;
+ const isHome=method==="Domicile", isRelay=method==="Point relais";
+ $("addressField").classList.toggle("hidden",!isHome);
+ $("relayField").classList.toggle("hidden",!isRelay);
+ $("customerAddress").required=isHome;
+ $("customerRelay").required=isRelay;
+ if(!isHome)$("customerAddress").value="";
+ if(!isRelay)$("customerRelay").value="";
+}
+$("deliveryMethod").addEventListener("change",updateDeliveryFields);
+function visibleProducts(){return products.filter(p=>activeFilter==="tout"||p.category===activeFilter)}
+function render(){
+ const list=visibleProducts(),perPage=16,pages=Math.max(1,Math.ceil(list.length/perPage));if(page>pages)page=1;
+ $("count").textContent=`${list.length} article${list.length===1?"":"s"}`;
+ $("catalogState").textContent=db?"Catalogue synchronisé":"";
+ $("productGrid").innerHTML=list.slice((page-1)*perPage,page*perPage).map(p=>`
+ <article class="product"><div class="product-image"><img loading="lazy" src="${escapeHtml(p.image_url||"")}" alt="${escapeHtml(p.name)}" onerror="this.style.display='none';this.parentElement.style.background='#f0e9dd'">${p.badge?`<span class="badge">${escapeHtml(p.badge)}</span>`:""}</div>
+ <div class="product-info"><h3 class="product-name">${escapeHtml(p.name)}</h3><div class="price">${money(p.price)}</div><div class="ref">Réf. ${escapeHtml(p.ref||"—")}</div>
+ <button class="order" data-order-id="${escapeHtml(p.id||"")}" data-order-name="${escapeHtml(p.name)}" data-order-price="${Number(p.price)||0}" data-order-ref="${escapeHtml(p.ref||"")}" data-order-image="${escapeHtml(p.image_url||"")}">Commander</button></div></article>`).join("") || "<p>Aucun produit dans cette catégorie pour le moment.</p>";
+ $("pagination").innerHTML=Array.from({length:pages},(_,i)=>`<button class="page-btn ${page===i+1?"active":""}" data-page="${i+1}">${i+1}</button>`).join("");
+ $("pageLabel").textContent=list.length?`Page ${page} sur ${pages}`:"";
+ document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter===activeFilter));
+}
+async function loadProducts(){
+ if(db){
+  const {data,error}=await db.from("products").select("*").order("created_at",{ascending:false});
+  if(!error && data && data.length){products=data;render();return}
+  if(!error && data && data.length===0){products=[];render();return}
+  $("catalogState").textContent="Mode aperçu (vérifiez Supabase)";
+ }
+ render();
+}
+function openModal(id){$(id).classList.add("open");document.body.style.overflow="hidden"}
+function closeModal(id){$(id).classList.remove("open");if(!document.querySelector(".modal.open"))document.body.style.overflow=""}
+document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>closeModal(b.dataset.close)));
+document.querySelectorAll(".modal").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)closeModal(m.id)}));
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".modal.open").forEach(m=>closeModal(m.id))});
+$("productGrid").addEventListener("click",e=>{const b=e.target.closest("[data-order-name]");if(!b)return;selectedProduct={id:b.dataset.orderId,name:b.dataset.orderName,price:Number(b.dataset.orderPrice),ref:b.dataset.orderRef,imageUrl:b.dataset.orderImage||"",category:products.find(p=>String(p.id||"")===b.dataset.orderId&&b.dataset.orderId!=="")?.category||products.find(p=>p.name===b.dataset.orderName)?.category||""};$("orderProduct").value=`${selectedProduct.name} — ${money(selectedProduct.price)}${selectedProduct.ref?" (Réf. "+selectedProduct.ref+")":""}`;$("orderProductDetails").value=$("orderProduct").value;$("orderStatus").textContent="";$("orderStatus").className="status";$("orderForm").reset();$("orderProduct").value=`${selectedProduct.name} — ${money(selectedProduct.price)}${selectedProduct.ref?" (Réf. "+selectedProduct.ref+")":""}`;$("orderProductDetails").value=$("orderProduct").value;$("orderQty").value=1;updateSizeField();updateDeliveryFields();openModal("orderModal")});
+$("pagination").addEventListener("click",e=>{const b=e.target.closest("[data-page]");if(!b)return;page=Number(b.dataset.page);render();$("collection").scrollIntoView({behavior:"smooth",block:"start"})});
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{activeFilter=b.dataset.filter;page=1;render()}));
+document.querySelectorAll('nav a[data-filter],footer a[data-filter]').forEach(a=>a.addEventListener("click",()=>{activeFilter=a.dataset.filter;page=1;render();$("nav").classList.remove("open")}));
+$("menuToggle").addEventListener("click",()=>$("nav").classList.toggle("open"));
+
+$("orderForm").addEventListener("submit",async e=>{
+ e.preventDefault();const form=e.currentTarget;const status=$("orderStatus"),button=$("submitOrder");
+ if(!web3Configured){status.className="status error";status.textContent="Le formulaire n’est pas encore connecté : ajoutez votre clé Web3Forms dans le code avant de recevoir les commandes.";return}
+ button.disabled=true;button.textContent="Envoi…";status.textContent="";
+ const data=new FormData(form);
+ data.set("access_key",WEB3FORMS_ACCESS_KEY);
+ data.set("subject","Nouvelle commande — Tchiky Élégance");
+ data.set("from_name","Tchiky Élégance — Commandes");
+ data.set("message",`Nouvelle commande Tchiky Élégance\nProduit: ${$("orderProduct").value}\nQuantité: ${$("orderQty").value}\nNom: ${$("customerName").value}\nTéléphone: ${$("customerPhone").value}\nWilaya: ${$("customerWilaya").value}\nCouleur: ${$("customerColor").value}\nPointure: ${selectedProduct?.category==="chaussures"?($("customerSize").value||"Non précisée"):"Non applicable"}\nMéthode de livraison: ${$("deliveryMethod").value}\nAdresse de livraison: ${$("deliveryMethod").value==="Domicile"?$("customerAddress").value:"Non applicable"}\nPoint relais: ${$("deliveryMethod").value==="Point relais"?$("customerRelay").value:"Non applicable"}`);
+ try{
+  // Send JSON so Web3Forms returns a JSON response instead of a redirect/HTML page.
+  const payload=Object.fromEntries(data.entries());
+  const res=await fetch("https://api.web3forms.com/submit",{
+   method:"POST",
+   headers:{"Content-Type":"application/json","Accept":"application/json"},
+   body:JSON.stringify(payload)
+  });
+  const responseText=await res.text();
+  let result={};
+  try{result=JSON.parse(responseText)}catch(parseError){throw new Error(`Le service a répondu sans JSON (HTTP ${res.status}). La commande peut avoir été envoyée; vérifiez votre boîte mail avant de réessayer.`)}
+  if(res.ok && result.success===true){
+   status.className="status success";
+   status.textContent="Commande envoyée avec succès ! Nous vous contacterons pour la confirmer.";
+   try { if (form && typeof form.reset === "function") form.reset(); } catch (resetError) { console.warn("Commande envoyée, mais réinitialisation du formulaire impossible:", resetError); }
+   updateDeliveryFields();
+  } else {
+   const detail=result.message||result.error||result.body?.message||`Erreur du service (HTTP ${res.status})`;
+   throw new Error(detail);
+  }
+ }
+ catch(err){status.className="status error";status.textContent=`Échec de l’envoi : ${err.message||"erreur réseau"}. Vérifiez la connexion puis réessayez uniquement si vous n’avez pas reçu de confirmation.`;console.error("Web3Forms submission error:",err)}
+ finally{button.disabled=false;button.textContent="Envoyer la commande"}
+});
+
+$("adminOpen").addEventListener("click",e=>{e.preventDefault();openModal("adminModal")});
+$("adminLoginForm").addEventListener("submit",e=>{e.preventDefault();if($("adminUsername").value==="admin"&&$("adminPassword").value==="admin"){adminLoggedIn=true;$("loginStatus").textContent="";$("adminLoginView").classList.add("hidden");$("adminDashboard").classList.remove("hidden");renderAdminProducts()}else{$("loginStatus").textContent="Identifiants incorrects."}});
+$("adminLogout").addEventListener("click",()=>{adminLoggedIn=false;$("adminDashboard").classList.add("hidden");$("adminLoginView").classList.remove("hidden");$("adminLoginForm").reset();$("adminUsername").value="";$("adminPassword").value="";});
+document.querySelectorAll("[data-admin-tab]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-admin-tab]").forEach(x=>x.classList.toggle("active",x===b));$("adminProductsView").classList.toggle("hidden",b.dataset.adminTab!=="products");$("adminAddView").classList.toggle("hidden",b.dataset.adminTab!=="add");if(b.dataset.adminTab==="add")resetProductForm()}));
+function renderAdminProducts(){
+ $("adminProductsList").innerHTML=products.map(p=>`<div class="admin-item"><img src="${escapeHtml(p.image_url||"")}" alt=""><div><strong>${escapeHtml(p.name)}</strong><small>${money(p.price)} · ${escapeHtml(p.category)} · ${escapeHtml(p.ref||"Sans référence")}</small></div><div class="admin-item-actions"><button data-edit="${escapeHtml(p.id||"")}" data-name="${escapeHtml(p.name)}">Modifier</button><button class="delete" data-delete="${escapeHtml(p.id||"")}" data-name="${escapeHtml(p.name)}">Supprimer</button></div></div>`).join("")||"<p>Aucun produit enregistré. Ajoutez votre premier produit.</p>";
+}
+$("adminProductsList").addEventListener("click",async e=>{
+ const edit=e.target.closest("[data-edit]");if(edit){const p=products.find(x=>String(x.id||"")===edit.dataset.edit&&edit.dataset.edit!=="")||products.find(x=>x.name===edit.dataset.name);if(!p)return; $("editProductId").value=p.id||"";$("productName").value=p.name;$("productPrice").value=p.price;$("productRef").value=p.ref||"";$("productCategory").value=p.category;$("productBadge").value=p.badge||"";$("productImage").value="";document.querySelector('[data-admin-tab="add"]').click();return}
+ const del=e.target.closest("[data-delete]");if(del){if(!confirm(`Supprimer « ${del.dataset.name} » ?`))return;if(!db||!del.dataset.delete){alert("Connectez Supabase et enregistrez ce produit dans la base pour pouvoir le supprimer.");return}const {error}=await db.from("products").delete().eq("id",del.dataset.delete);if(error){alert("Suppression impossible. Vérifiez les permissions Supabase.");return}await loadProducts();renderAdminProducts()}
+});
+function resetProductForm(){$("productForm").reset();$("editProductId").value="";$("productStatus").textContent="";$("productStatus").className="status";$("saveProductBtn").textContent="Enregistrer le produit"}
+$("cancelEdit").addEventListener("click",resetProductForm);
+$("productForm").addEventListener("submit",async e=>{
+ e.preventDefault();const status=$("productStatus"),id=$("editProductId").value,file=$("productImage").files[0];let imageUrl="";
+ if(!db){status.className="status error";status.textContent="Supabase n’est pas configuré. Ajoutez l’URL et la clé publique du projet.";return}
+ const old=products.find(p=>String(p.id)===id);
+ if(file){const safeName=`${Date.now()}-${file.name.replace(/[^a-zA-Z0-9._-]/g,"-")}`;const {data:up,error:upError}=await db.storage.from("product-images").upload(safeName,file,{upsert:true,contentType:file.type});if(upError){console.error("Supabase image upload error:",upError);status.className="status error";status.textContent="Image non téléversée : "+(upError.message||"erreur Storage")+". Vérifiez le bucket product-images et ses permissions.";return}imageUrl=db.storage.from("product-images").getPublicUrl(up.path).data.publicUrl}
+ const row={name:$("productName").value.trim(),price:Number($("productPrice").value),ref:$("productRef").value.trim(),category:$("productCategory").value,badge:$("productBadge").value.trim()||null,image_url:imageUrl||(old?.image_url||null)};
+ $("saveProductBtn").disabled=true;status.textContent="Enregistrement…";
+ try{const result=id?await db.from("products").update(row).eq("id",id):await db.from("products").insert(row);if(result.error)throw result.error;status.className="status success";status.textContent="Produit enregistré.";await loadProducts();renderAdminProducts();resetProductForm();document.querySelector('[data-admin-tab="products"]').click();}
+ catch(err){console.error("Supabase product save error:",err);status.className="status error";status.textContent="Échec : "+(err?.message||err?.details||"erreur Supabase inconnue")+". Vérifiez la table products et ses politiques RLS."}
+ finally{$("saveProductBtn").disabled=false}
+});
+loadProducts();
+</script>
+</body>
+</html>
